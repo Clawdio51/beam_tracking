@@ -11,13 +11,13 @@ from dataloader import GPSSet
 sendProgressUpdate = True       # Enables/Disables notifications
 
 paths = {
-    'train': 'N:\\Claudio\\Competition - Multi Modal\\dataset',
-    'test': 'N:\\Claudio\\Competition - Multi Modal\\dataset_test'
+    'train': 'dataset',
+    'test': 'dataset_test'
 }
 
 def sendNotification(text, silent=True):
     if sendProgressUpdate:
-        token = '2009509203:AAHfCImvziYXf1R3nHTO5nBVxHUXKz0KDj4'
+        token = 'xxxxxxxxxxx:your_token'
         url = f'https://api.telegram.org/bot{token}'
         params = {'chat_id':1388173517, 'text':text, 'disable_notification':silent}
         r = requests.get(url + '/sendMessage', params=params)
