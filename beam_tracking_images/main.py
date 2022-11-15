@@ -22,7 +22,7 @@ def sendNotification(text, silent=True):
     if sendProgressUpdate:
         token = 'xxxxxxxxxxx:your_token'
         url = f'https://api.telegram.org/bot{token}'
-        params = {'chat_id':1388173517, 'text':text, 'disable_notification':silent}
+        params = {'chat_id':xxxxxxxxxxx, 'text':text, 'disable_notification':silent}
         r = requests.get(url + '/sendMessage', params=params)
 
 def train_one_epoch(epoch):
